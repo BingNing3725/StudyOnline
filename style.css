@@ -1,0 +1,346 @@
+* {
+  margin:0;
+  padding:0;
+}
+/* 添加清除浮动的类 */
+.clearfix:before,
+.clearfix:after
+{
+  content:"";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix{
+  zoom:1;
+}
+/* 居中对齐的版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+a{
+text-decoration: none;
+}
+body {
+  background-color: #f2f5f7;
+  /* height: 3000px; */
+}
+
+/* header头部 */
+
+.header {
+  height:42px;
+  /* background-color: pink; */
+  /* 此处会重叠w里面的margin */
+  margin:30px auto;
+}
+.logo {
+  float: left;
+  width:198px;
+  height: 42px;
+}
+.nav{
+  float: left;
+  margin-left:60px;
+}
+.nav li {
+  margin:0 15px;
+  float:left;
+}
+.nav a{
+  display: block;
+  height: 42px;
+  /* 因为字数不同，我们给padding来撑开 */
+  padding:0 10px;
+  /* 垂直居中 */
+  line-height:42px;
+  font-size:18px;
+  color: #050505;
+}
+.nav ul li a:hover {
+  color: rgb(33, 77, 222);
+  border-bottom: 2px solid rgb(33, 77, 222);
+}
+.search {
+  float:left;
+  margin-left: 70px;
+  width:412px;
+  height: 42px;
+  /* background-color: aquamarine; */
+}
+.search input {
+  float:left;
+  width: 345px;
+  height: 40px;
+  border:1px solid rgb(33, 77, 222);
+  border-right:0;
+  color:#bfbfbf;
+  font-size:14px;
+  padding-left: 16px;
+}
+.search button {
+  float :left;
+  width:50px;
+  height: 42px;
+  background-image: url(images/btn.png);
+  /* 去除按钮默认边框 */
+  border:0;
+}
+.user {
+  float:right;
+  line-height:42px;
+  /* background-color: #671ccf; */
+  margin-right:30px;
+  font-size:14px;
+  color:#666;
+}
+/* 图片和文字垂直对齐 */
+.user img {
+  vertical-align:middle;
+}
+
+/* banner盒子 */
+
+.banner {
+  height: 421px;
+  background-color:#1c036c;
+}
+.banner .w{
+  height:421px;
+  width:1200px;
+  /* background-color: pink; */
+  /* 背景不平铺 顶部居中 */
+  background: url(images/bgi.png) no-repeat top center;
+}
+.subnav {
+  float :left;
+  width:190px;
+  height: 421px;
+  background:rgba(0,0,0,.3);
+}
+.subnav li {
+  height:45px;
+  line-height:45px;
+  padding:0px 20px;
+}
+.subnav ul li a{
+  font-size: 14px;
+  color:white;
+  /* overflow: hidden; */
+  display: block;
+}
+.subnav ul li span {
+  float:right;
+}
+.subnav ul li a:hover{
+  color:rgb(33, 77, 222);
+}
+.course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+  /* 浮动的盒子不会有外边距合并的问题 */
+  margin-top:50px;
+}
+.course h2{
+  font-weight: 700;
+  background-color:#9bceea;
+  color: #f2f5f7;
+  font-size:18px;
+  height: 48px;
+  /* 水平居中 */
+  text-align: center;
+  line-height: 48px;
+}
+.course .bd {
+  height: 252px;
+  padding:0 20px;
+}
+.bd ul li {
+  padding:13px 0;
+  border-bottom:2px dashed #ccc;
+}
+.bd ul li h4{
+  font-size:16px;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+.bd ul li p {
+  font-size:12px;
+  color: #a5a5a5;
+}
+.bd .more {
+  /* 行内元素无宽高，转块 */
+  display: block;
+  height: 38px;
+  border:1px solid #22b0ff;
+  line-height: 38px;
+  text-align: center;
+  color: #00a4ff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top:3px;
+}
+.bd .more:hover {
+  color: #1eedd2;
+}
+
+/*   < !-- 精品推荐导览 --> */
+
+.goods {
+  height: 60px;
+  background-color: #fff;
+  /* 阴影 */
+  box-shadow: 0 2px 3px 3px rgba(0,0,0,.1);
+  margin-top: 10px;
+  /* 行高会继承 */
+  line-height: 60px;
+}
+.goods h3 {
+  float:left;
+  margin-left:26px;
+  font-size: 16px;
+  color:#00a4ff;
+}
+.goods ul {
+  float: left;
+  margin-left: 30px;
+}
+.goods ul li {
+  float: left;
+}
+.goods ul li a {
+  padding:0 40px;
+  font-size:16px;
+  color:#050505;
+  border-left:1px solid #ccc;
+}
+.goods ul li a:hover {
+  color: rgb(33, 77, 222);
+}
+.goods>a {
+  float:right;
+  margin-right:26px;
+  font-size: 14px;
+    color: #00a4ff;
+}
+.goods>a:hover {
+  color: rgb(33, 77, 222);
+}
+    /* < !-- 精品推荐各课程选项 --> */
+.box {
+  margin-top:30px;
+  width:21
+}
+.box .boxhd{
+  height: 43px;
+}
+.boxhd h3 {
+  float: left;
+  font-weight: 700;
+  font-size: 20px;
+  color:#494949;
+  line-height: 43px;
+}
+.boxhd a{
+  float: right;
+  font-size:12px;
+  color:#a5a5a5;
+  line-height: 43px;
+}
+.boxbd ul li {
+  /* 相对定位 */
+  position: relative;
+  float:left;
+  width:228px;
+  height: 270px;
+  background-color: #fff;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+/* 把li的父元素ul修改的足够宽，就不用每次去除一个li的右边距 */
+.boxbd ul {
+  /* 五个li加边距的宽度 */
+  width:1225px;
+}
+/* 强制修改图片宽度与父元素一致 */
+.boxbd ul li>img {
+  width: 100%;
+}
+.boxbd ul li em {
+  /* 绝对定位 */
+  position:absolute;
+  top:4px;
+  right:-4px;
+}
+.boxbd ul li h4{
+  font-size:14px;
+  font-weight: 400;
+  color:#050505;
+  margin:20px 20px 20px 25px;
+
+}
+.boxbd .info {
+  margin:0 20px 0 25px ;
+  font-size:12px;
+  color:#999;
+}
+.boxbd .info span {
+  color:#e96d14
+}
+    /* < !-- 底部footer --> */
+.footer {
+  height: 415px;
+  background-color: #fff;
+}
+.footer .w {
+  padding-top:25px;
+}
+.footer .w .copyleft {
+  float:left;
+}
+.footer .w .copyright
+{
+  float:right;
+}
+.copyright  dl
+{
+  float:left;
+  margin-left:100px;
+}
+.copyleft p
+{
+  margin:20px 0 15px 0;
+  font-size:12px;
+  color:#666;
+}
+.copyleft a
+{
+  width:118px;
+  height:  33px;
+  display: block;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+  color:#00a4ff;
+  border:#00a4ff solid 1px;
+}
+.copyright dl dt{
+  font-size:16px;
+  color:#333;
+  margin-bottom: 5px;
+}
+.copyright dl dd a {
+  font-size: 12px;
+  color: #333;
+}
+.copyright dl dd a:hover{
+  color: #0a4781;
+  text-decoration: underline;
+}
